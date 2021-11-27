@@ -21,13 +21,13 @@
         tools:ignore="ImageContrastCheck" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/login_usuario_email"
+        android:id="@+id/login_email_layou"
         android:layout_width="0dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/login_icon"
         android:layout_marginHorizontal="@dimen/dimen_default"
-        app:layout_constraintBottom_toTopOf="@id/login_password"
+        app:layout_constraintBottom_toTopOf="@id/login_password_layout"
         app:layout_constraintVertical_chainStyle="packed"
         android:layout_marginVertical="@dimen/dimen_default"
         android:layout_height="wrap_content"
@@ -40,6 +40,7 @@
         >
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:ignore="TextContrastCheck"
@@ -49,11 +50,11 @@
 
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/login_password"
+        android:id="@+id/login_password_layout"
         android:layout_width="0dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/login_usuario_email"
+        app:layout_constraintTop_toBottomOf="@id/login_email_layou"
         android:layout_marginHorizontal="@dimen/dimen_default"
         app:layout_constraintBottom_toTopOf="@id/login_button"
         android:layout_height="wrap_content"
@@ -67,6 +68,7 @@
         >
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:ignore="TextContrastCheck"

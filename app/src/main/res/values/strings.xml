@@ -23,4 +23,15 @@
     <string name="nombre_de_usuario">Nombre de Usuario</string>
     <string name="registrar">Registrar</string>
     <string name="login">Login</string>
+    <string name="home_label">Home</string>
+    <string name="productos_label">Productos</string>
+    <string name="comentarios_label">Comentarios</string>
+    <string name="perfil_label">Perfil</string>
+    <string name="my_tienda">My tienda</string>
+    <string name="home_title">Información General</string>
+    <string name="productos_title">Mis Productos</string>
+    <string name="comentarios_title">Mis Comentarios</string>
+    <string name="perfil_title">Mi Perfil</string>
+    <string name="adress">Calle 13a bis #20 - 132</string>
+    <string name="description_tienda">Una tienda de barrio se define como un establecimiento atendido por una o más personas detrás de un mostrador en donde el consumidor no tiene al alcance los productos y más del 50% de las ventas son para consumir fuera del establecimiento.</string>
 </resources>

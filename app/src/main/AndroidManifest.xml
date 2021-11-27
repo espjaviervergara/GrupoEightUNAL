@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GrupoEightUNAL">
         <activity
+            android:name=".HomeActivity"
+            android:exported="false"
+            android:theme="@style/Theme.GrupoEightUNAL.NoActionBar"/>
+        <activity
             android:name=".SplashActivity"
             android:exported="true"
             android:theme="@style/Theme.GrupoEightUNAL.NoActionBar">
@@ -23,8 +27,7 @@
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.GrupoEightUNAL.NoActionBar"/>
-
+            android:theme="@style/Theme.GrupoEightUNAL.NoActionBar" />
     </application>
 
 </manifest>
