@@ -20,7 +20,7 @@ class HomeActivity : AppCompatActivity() {
         setSupportActionBar(binding.toolBar)
 
         val navController = findNavController(R.id.nav_host_fragment_content_home)
-        appBarConfiguration = AppBarConfiguration(navController.graph)
+        appBarConfiguration = AppBarConfiguration(setOf(R.id.homeFragment, R.id.productFragment,R.id.commentFragment, R.id.profileFragment))
         setupActionBarWithNavController(navController, appBarConfiguration)
         binding.bottomNavigation.setupWithNavController(navController)
     }

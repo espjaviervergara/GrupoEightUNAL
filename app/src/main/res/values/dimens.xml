@@ -3,4 +3,6 @@
     <dimen name="dimen_default">16dp</dimen>
     <dimen name="icon_size">150dp</dimen>
     <dimen name="icon_size_big">300dp</dimen>
+    <dimen name="corner_radius_card">8dp</dimen>
+    <dimen name="card_elevation">6dp</dimen>
 </resources>
