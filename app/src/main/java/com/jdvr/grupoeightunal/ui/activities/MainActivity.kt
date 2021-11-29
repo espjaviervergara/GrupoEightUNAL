@@ -1,4 +1,4 @@
-package com.jdvr.grupoeightunal
+package com.jdvr.grupoeightunal.ui.activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

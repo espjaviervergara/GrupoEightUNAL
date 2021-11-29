@@ -1,4 +1,4 @@
-package com.jdvr.grupoeightunal
+package com.jdvr.grupoeightunal.ui.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,6 +7,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.jdvr.grupoeightunal.R
 import com.jdvr.grupoeightunal.databinding.ActivityHomeBinding
 
 class HomeActivity : AppCompatActivity() {
@@ -20,7 +21,12 @@ class HomeActivity : AppCompatActivity() {
         setSupportActionBar(binding.toolBar)
 
         val navController = findNavController(R.id.nav_host_fragment_content_home)
-        appBarConfiguration = AppBarConfiguration(setOf(R.id.homeFragment, R.id.productFragment,R.id.commentFragment, R.id.profileFragment))
+        appBarConfiguration = AppBarConfiguration(setOf(
+            R.id.homeFragment,
+            R.id.productFragment,
+            R.id.commentFragment,
+            R.id.profileFragment
+        ))
         setupActionBarWithNavController(navController, appBarConfiguration)
         binding.bottomNavigation.setupWithNavController(navController)
     }

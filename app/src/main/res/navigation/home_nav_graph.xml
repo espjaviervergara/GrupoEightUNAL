@@ -7,22 +7,32 @@
 
     <fragment
         android:id="@+id/commentFragment"
-        android:name="com.jdvr.grupoeightunal.CommentFragment"
+        android:name="com.jdvr.grupoeightunal.ui.fragments.CommentFragment"
         android:label="@string/comentarios_title"
         tools:layout="@layout/fragment_comment" />
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.jdvr.grupoeightunal.HomeFragment"
+        android:name="com.jdvr.grupoeightunal.ui.fragments.HomeFragment"
         android:label="@string/home_title"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/productFragment"
-        android:name="com.jdvr.grupoeightunal.ProductFragment"
+        android:name="com.jdvr.grupoeightunal.ui.fragments.ProductFragment"
         android:label="@string/productos_title"
-        tools:layout="@layout/fragment_product" />
+        tools:layout="@layout/fragment_product" >
+        <action
+            android:id="@+id/action_productFragment_to_productDetailFragment"
+            app:destination="@id/productDetailFragment"
+            app:popUpTo="@id/productFragment" />
+    </fragment>
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.jdvr.grupoeightunal.ProfileFragment"
+        android:name="com.jdvr.grupoeightunal.ui.fragments.ProfileFragment"
         android:label="@string/perfil_title"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/productDetailFragment"
+        android:name="com.jdvr.grupoeightunal.ui.fragments.ProductDetailFragment"
+        android:label="@string/product_details_title"
+        tools:layout="@layout/fragment_product_detail" />
 </navigation>

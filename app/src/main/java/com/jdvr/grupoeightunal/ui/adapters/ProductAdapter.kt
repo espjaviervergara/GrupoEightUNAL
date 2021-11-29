@@ -1,10 +1,13 @@
-package com.jdvr.grupoeightunal
+package com.jdvr.grupoeightunal.ui.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.jdvr.grupoeightunal.data.models.Product
 import com.jdvr.grupoeightunal.databinding.ItemProductBinding
+import com.jdvr.grupoeightunal.ui.listeners.OnProductListener
+import java.util.*
 
 class ProductAdapter(var items: List<Product>): RecyclerView.Adapter<ProductAdapter.ViewHoler>() {
     class ViewHoler(val item: ItemProductBinding): RecyclerView.ViewHolder(item.root)
@@ -37,5 +40,11 @@ class ProductAdapter(var items: List<Product>): RecyclerView.Adapter<ProductAdap
     override fun getItemViewType(position: Int): Int {
         return super.getItemViewType(position)
     }
+
+    fun newDataSet(newData: List<Product>){
+        items = newData
+        notifyDataSetChanged()
+    }
+
 
 }

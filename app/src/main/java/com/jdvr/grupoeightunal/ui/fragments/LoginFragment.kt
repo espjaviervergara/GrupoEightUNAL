@@ -1,4 +1,4 @@
-package com.jdvr.grupoeightunal
+package com.jdvr.grupoeightunal.ui.fragments
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,7 +7,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.jdvr.grupoeightunal.ui.activities.HomeActivity
+import com.jdvr.grupoeightunal.R
 import com.jdvr.grupoeightunal.databinding.FragmentLoginBinding
+import com.jdvr.grupoeightunal.isValidEmail
 
 class LoginFragment : Fragment() {
     private var _binding: FragmentLoginBinding? = null

@@ -1,4 +1,4 @@
-package com.jdvr.grupoeightunal
+package com.jdvr.grupoeightunal.ui.activities
 
 import android.animation.Animator
 import android.content.Intent

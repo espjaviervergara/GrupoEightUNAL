@@ -1,4 +1,4 @@
-package com.jdvr.grupoeightunal
+package com.jdvr.grupoeightunal.data.models
 
 data class Comment (
     var id: String,
