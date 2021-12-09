@@ -6,7 +6,7 @@ import com.jdvr.grupoeightunal.data.repositories.StoreRepositiry
 import org.koin.dsl.module
 
 val repoModule = module {
-    single { StoreRepositiry(get()) }
-    single { CommentRepository(get()) }
-    single { ProductRepository(get()) }
+    single { StoreRepositiry(get(), get()) }
+    single { CommentRepository(get(), get()) }
+    single { ProductRepository(get(),get()) }
 }
